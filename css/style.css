@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+}
+::selection{
+    color: white;
+    background-color: black;
+}
+body{
+    margin: 0;
+    padding: 70px 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.mobileMenu{
+    display: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left:0;
+    z-index: 10;
+}
+header .logo-name{
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .logo-name h1{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+header .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #202020;
+    padding: 0px 200px;
+}
+header .menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 4px 25px;
+    transition: 0.3s;
+}
+header .menu a::first-letter{
+    font-size: 15px;
+}
+header .menu a:hover{
+    background-color: white;
+    color: black
+}
+.menu-mobile{
+    display: none;
+}
+header .logo-animation{
+    animation-name: LogoAnime;
+    animation-duration: 5s;
+}
+@keyframes LogoAnime{
+    0%{
+        float: left;
+        margin-top: -50px;
+    }
+    10%{
+        float: left;
+        margin-top: -15px;
+    }
+    30%{
+        float: left;
+        margin-left: 20px;
+        margin-top: -20px;
+    }
+    40%{
+        float: left;
+        margin-left: 0px;
+        margin-top: -5px;
+        transform: rotate(360deg)
+    }
+    60%{
+        float: left;
+        font-size: 50px;
+    }
+    90%{
+        float: left;
+        font-size: 10px;
+    }
+    100%{
+        float: left;
+        font-size: 25px;
+    }
+}
+/* ------------------------- footer ---------------------------- */
+footer{
+    background-image: url("../img/future.jfif");
+    background-repeat: no-repeat;
+    background-size: 100% 700px;
+    background-position-y: -100px;
+    width: 100%;
+    height: 250px;
+}
+footer .back{
+    background-color: #000b;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    flex-wrap: wrap;
+}
+footer .objectback{
+    width: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.objectback a{
+    color: white;
+    flex-direction: column;
+    margin-top: 10px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.copyright{
+    font-size: 18px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    margin: -50px 0px 0px 0px;
+    padding: 0;
+    color: white;
+}
+@media only screen and (max-width: 1000px){
+    footer .objectback{
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 550px){
+    .mobileMenu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        background-color: #202020;
+        padding: 0px 200px;
+    }
+    .mobileMenu i{
+        padding: 4px 25px;
+        color: white;
+        cursor: pointer;
+    }
+    header .menu{
+        display: none;
+        flex-direction: column;
+    }
+    footer .objectback{
+        width: 150px;
+    }
+}

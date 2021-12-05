@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Vardenis</title>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!---------------------------- Header ---------------------->
+    <header>
+        <div class="logo-name"><h1>Vardenis</h1></div>
+        <div class="mobileMenu">
+            <i onclick="MenuViewer()" class="fa fa-bars menubar"></i>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="location.html">Location</a>
+            <a href="#">Events</a>
+            <a href="portfolio.html">Portfolio</a>
+        </div>
+    </header>
+    <!---------------------------- portfolio ---------------------->
+    <div class="object-2">
+        <img onclick="picture1()" src="img/logo.png" alt="">
+        <p>Picture 1</p>
+    </div>
+    <div class="portfolio">
+        <div class="objects">
+            <img onclick="picture2()" src="img/center.jpg" alt="">
+            <p>Picture 2</p>
+        </div>
+        <div class="objects">
+            <img onclick="picture3()" src="img/Ekexeci.jpg" alt="">
+            <p>Picture 3</p>
+        </div>
+        <div class="objects">
+            <img onclick="picture4()" src="img/future.jfif" alt="">
+            <p>Picture 4</p>
+        </div>
+        <div class="objects">
+            <img onclick="picture5()" src="img/hamaynqapetaran.jpg" alt="">
+            <p>Picture 5</p>
+        </div>
+        <div class="objects">
+            <img onclick="picture6()" src="img/Khachkarer.jpg" alt="">
+            <p>Picture 6</p>
+        </div>
+        <div class="objects">
+            <img onclick="picture7()" src="img/mountain 1.jpg" alt="">
+            <p>Picture 7</p>
+        </div>
+        <div class="objects">
+            <img onclick="picture8()" src="img/mountain 2.jpg" alt="">
+            <p>Picture 8</p>
+        </div>
+        <div class="objects">
+            <img onclick="picture9()" src="img/mountain 3.jpg" alt="">
+            <p>Picture 9</p>
+        </div>
+        <div class="objects">
+            <img onclick="picture10()" src="img/mountain 4.jpg" alt="">
+            <p>Picture 10</p>
+        </div>
+    </div>
+    <!----------------------------- Open IMG ---------------------->
+    <div class="openIMG">
+        <img id="picture" src="img/logo.png" alt="Picture">
+        <button onclick="ClosePicture()" class="fa fa-close"></button>
+    </div>
+    <!---------------------------- Footer ---------------------->
+    <footer>
+        <div class="back">
+            <div class="objectback">
+                <h1>Menu</h1>
+                <a href="#">Home</a><br>
+                <a href="#">About</a><br>
+                <a href="#">Pictures</a>
+            </div>
+            <div class="objectback">
+                <h1>Future</h1>
+                <a href="#">Nature</a><br>
+                <a href="#">Picture</a>
+            </div>
+            <div class="objectback">
+                <h1>Social</h1>
+                <a href="#">Facebook</a><br>
+                <a href="#">Instagram</a><br>
+                <a href="#">Twitter</a><br>
+                <a href="#">Youtube</a>
+            </div>
+            <br>
+        </div>
+        <p class="copyright">Copyright (C) 2021 | Themplate Maked by Gug</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,228 @@
+header .menu a:nth-child(1){
+    background-color: white;
+    color: black
+}
+/* --------------------- Slide ------------------ */
+.slide-back{
+    width: 80%;
+    overflow: hidden;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+.object{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    padding: 40px;
+    position: relative;
+    float: left;
+    background-color: #202020;
+}
+.object img{
+    width: 300px;
+}
+.object div:nth-child(1){
+    margin: 20px;
+}
+.object div:nth-child(2) h1, .object div:nth-child(2) p{
+    color: white;
+    text-transform: capitalize;
+}
+.object div:nth-child(2) a{
+    text-decoration: none;
+    color: black;
+    background-color: #aaa;
+    text-transform: capitalize;
+    padding: 10px 30px;
+}
+@keyframes slide-animation{
+    0%{left: 180%;}
+    10%{left: 180%}
+    20%{left: 105%;}
+    40%{left: 28%;}
+    60%{left: 28%;}
+    80%{left: 105%;}
+    100%{left: 180%;}
+}
+.Slide{
+    margin: 0 0 0 -180%;
+    position: relative;
+    animation-name: slide-animation;
+    animation-duration: 33s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+.radios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.radio{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #202020;
+    margin: 5px;
+}
+.radio:nth-child(1){
+    animation-name: Slide1;
+    animation-duration: 33s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+.radio:nth-child(2){
+    animation-name: Slide2;
+    animation-duration: 33s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+.radio:nth-child(3){
+    animation-name: Slide3;
+    animation-duration: 33s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+@keyframes Slide1{
+    0%{background-color: #aaa;}
+    10%{background-color: #aaa;}
+    20%{background-color: #202020;}
+    40%{background-color: #202020;}
+    60%{background-color: #202020;}
+    80%{background-color: #202020;}
+    100%{background-color: #aaa;}
+}
+@keyframes Slide2{
+    0%{background-color: #202020;}
+    10%{background-color: #202020;}
+    20%{background-color: #aaa;}
+    40%{background-color: #202020;}
+    60%{background-color: #202020;}
+    80%{background-color: #aaa;}
+    100%{background-color: #202020;}
+}
+@keyframes Slide3{
+    0%{background-color: #202020;}
+    10%{background-color: #202020;}
+    20%{background-color: #202020;}
+    40%{background-color: #aaa;}
+    60%{background-color: #aaa;}
+    80%{background-color: #202020;}
+    100%{background-color: #202020;}
+}
+/* ----------------------------------- Home page --------------------------------- */
+.home{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
+    border: 2px solid #202020;
+    border-radius: 20px;
+    padding: 20px;
+}
+.home img{
+    width: 250px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+.home p{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.home p::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.home a{
+    font-style: italic;
+    color: #606060;
+    /* text-decoration: none; */
+}
+.home a:hover{
+    color: #202020;
+    /* text-decoration: overline; */
+}
+/* --------------------------- facebook page -------------------------- */
+.facebookpage{
+    background-image: url("../img/mountain 3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 1000px;
+    background-position-y: -100px;
+    width: 100%;
+    height: 300px;
+    color: white;
+}
+.facebookpage div, .instagrampage div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0008;
+    width: 100%;
+    height: 100%;
+}
+.facebookpage a, .instagrampage .fa{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    margin-right: 5px;
+}
+/* -------------------------- History ---------------------------- */
+.history, .economy{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
+    border: 2px solid #202020;
+    border-radius: 20px;
+    padding: 20px;
+}
+.history img, .economy img{
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+.history p, .economy p{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.history p::first-letter, .economy p::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.history a, .economy a{
+    font-style: italic;
+    color: #606060;
+    /* text-decoration: none; */
+}
+.history a:hover, .economy a:hover{
+    color: #202020;
+    /* text-decoration: overline; */
+}
+/* --------------------------- Instagram page -------------------------- */
+.instagrampage{
+    background-image: url("../img/mountain 4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 900px;
+    background-position-y: -200px;
+    width: 100%;
+    height: 300px;
+    color: white
+}
+@media only screen and (max-width: 1000px){
+    .home, .history, .economy, .object{
+        flex-direction: column;
+    }
+    .home img, .history img, .economy img{
+        order: 2;
+    }
+    .slide-back, .home, .history, .economy{
+        width: 98%;
+    }
+}
